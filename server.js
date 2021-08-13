@@ -30,7 +30,7 @@ app.use(passport.session());
 
 // Mongoose connection
 //const url = 'mongodb://localhost:27017/TeamOrganzierDB';
-const url = process.env.MONGODB_CONNECTION_URL;
+const url = process.env.MONGODB_CONNECTION_URL || 'mongodb+srv://teamorgaziner:teamorganizer@cluster0.oa4kz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify:false });
 mongoose.set('useCreateIndex', true);
 
