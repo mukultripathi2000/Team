@@ -21,12 +21,22 @@ The backend is built as an API with CRUD operations, and the frontend makes requ
 
 -----------------------------------------------------------------------------------------------------
 
-## Sign in
-![](screenshots/1.png)
+## Sign up
+![](1.png)
+## Log in
+![](2.png)
+## User's task Schedule on his dashboard
+![](3.png)
+## User's team to which he belongs
+![](4.png)
+## User's profile
+![](6.png)
+## Join and Create team Buttons
+![](5.png)
+## Join team funtionality 
+![](7.png)
+## Add new member functionality
+![](8.png)
+## Create task functionality
+![](9.png)
 
-## add & edit & delete & view a Task
-![](screenshots/2.png)
-## search for a Task
-![](screenshots/3.png)
-## view profile & update info & update image
-![](screenshots/4.png)
