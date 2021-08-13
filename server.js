@@ -11,9 +11,15 @@ const app = express();
 // App
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname,'client','build')));
+app.use(express.static(path.join(__dirname, 'client', 'build')));
+app.set('trust proxy', 1);
 app.use(
+  
   session({
+    cookie:{
+      secure: true,
+      maxAge:60000
+         },
     secret: 'Secret',
     resave: false,
     saveUninitialized: false,
