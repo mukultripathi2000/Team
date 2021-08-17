@@ -9,6 +9,9 @@ const path = require('path');
 const app = express();
 
 // App
+app.get('/',(req.res)=>{
+  res.send('Welcome to Team Organizer API')
+}
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'build')));
